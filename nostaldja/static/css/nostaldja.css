@@ -1,0 +1,251 @@
+/* tunr/static/css/tunr.css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* background: #c94b4b; 
+    background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
+    background: linear-gradient(to right, #4b134f, #c94b4b); */
+    background: #833ab4;  
+background: -webkit-linear-gradient(to left, #fcb045, #fd1d1d, #833ab4);  
+background: linear-gradient(to left, #fcb045, #fd1d1d, #833ab4); 
+
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* a:hover {
+    color: #833ab4;
+} */
+
+nav {
+    width: 100%;
+    background-color: #4b134f;
+    box-shadow: 0 1px 5px -2px black;
+    position: fixed;
+    top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+nav ul li a {
+    border-bottom: 1px solid transparent;
+    transition: .5s;
+}
+
+nav li:hover {
+    background-color: #FD1D1E;
+}
+nav li:hover a {
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.content li {
+    border-bottom: 1px solid transparent;
+    transition: .5s;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.content li:hover {
+    background-color: rgba(255,255,255,.1);
+}
+
+.index-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.index-content h1{
+    font-size: 4rem;
+    text-shadow: 2px 2px #833ab4;
+}
+
+.index-content h2 {
+    width: 100%;
+    text-shadow: 2px 2px #833ab4;
+}
+
+h2 {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.decade-h2-container {
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.decade-h2-container i {
+    margin-left: 25px;
+}
+
+h2 i, .decade-h2-container  i {
+    font-size: 2rem;
+}
+
+i:hover {
+    color: #833ab4;
+}
+
+.content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-container h2 {
+    width: fit-content;
+}
+
+.detail-container p {
+    width: 80%;
+    letter-spacing: 2px;
+}
+
+.content img {
+    width: 25%;
+}
+
+.details h2 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.decade-fads-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.details-buttons i {
+    margin: 15px;
+}
+
+.fad-detail {
+    width: 100vw;
+}
+
+.fad-detail li {
+    width: 500px;
+}
+
+.fad-detail li a{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form label {
+    font-size: 1.5rem;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    transition: .1s all;
+    background-color: #4b134f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    /* border: 1px solid transparent; */
+}
+
+form button:hover {
+    transform: scale(1.1);
+    background-color: #833ab4;
+    /* border: 1px solid 833ab4; */
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer {
+    background-color: #4b134f;
+    padding: 25px;
+}
