@@ -1,0 +1,1 @@
+web: gunicorn nostaldja_project.wsgi
