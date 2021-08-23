@@ -1,0 +1,19 @@
+{% extends 'nostaldja/base.html' %} {% block content %}
+<div class="detail-container">
+    <h2>{{fad.name}} </h2>
+    
+<div class="details-buttons">
+    <a href="{%url 'fad_edit' pk=fad.pk %}"><i class="fas fa-edit"></i></a>
+    <a href="{% url 'fad_delete' pk=fad.pk %}"><i class="fas fa-trash-alt"></i></a>
+</div>
+<a>
+    {{fad.decade}}
+</a>
+<p>
+    {{fad.description}}
+</p>
+
+<img src="{{fad.image_url}}" alt="" class="fad-photo">
+</div>
+
+{%endblock%}
